@@ -1,0 +1,58 @@
+@import '../../assets/scss/variables';
+
+.todo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  padding: 0 15px;
+  max-width: 600px;
+  min-height: 100vh;
+  width: 100%;
+
+  .todo__title {
+    margin-bottom: 20px;
+    font-size: 34px;
+    font-weight: 300;
+    text-transform: uppercase;
+    color: $color-grey;
+    cursor: default;
+  }
+
+  .todo__add-form {
+    position: relative;
+    margin-bottom: 20px;
+    max-width: 250px;
+    width: 100%;
+
+    > input {
+      padding: 5px;
+      padding-right: 40px;
+      width: 100%;
+      border: 1px solid $color-grey;
+    }
+
+    > button {
+      position: absolute;
+      top: 0;
+      right: 0;
+      padding: 0 8px;
+      height: 100%;
+      font-size: 11px;
+      text-transform: uppercase;
+      background-color: transparent;
+      border: none;
+
+      &:hover {
+        color: $color-red;
+      }
+    }
+  }
+
+  .todo__list {
+    max-width: 250px;
+    width: 100%;
+    list-style: none;
+  }
+}
